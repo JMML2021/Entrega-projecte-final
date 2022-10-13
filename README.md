@@ -15,7 +15,9 @@ Filtrarem els temps que el Error siguin més grans de 30 minuts. Aquet valor de 
 
 Les dades son molt des-balancejades en la quantitat de vols que arriben tard. El 92% dels vols arriben a l’hora, i només un 8% tard. 
 
-Però primer farem un Split de un 80% de vols que seran de  train i un 20% de test. Balancejaré les dades de train i crearé el model de “regressió logística”. Farem un “summary” i ens fixarem en els valors de les P_values. Tots els factors que no siguin més petits de 0.05 els rebutjarem. A l’estudi veurem que només per el retard del 3r salt, l’error en la sortida i l’error en el temps de vol, afecten. Amb aquest 2 paràmetres expliquem en un 78% el impacta del retard de l’avió, i la resta fins el 100% es soroll.
+Però primer farem un Split de un 80% de vols que seran de  train i un 20% de test. Balancejaré les dades de train i crearé el model de “regressió logística”. Farem un “summary” i ens fixarem en els valors de les P_values. Tots els factors que no siguin més petits de 0.05 els rebutjarem. 
+
+A l’estudi veurem que només per el retard del 3r salt, l’error en la sortida i l’error en el temps de vol, afecten. Amb aquest 2 paràmetres expliquem en un 78% el impacta del retard de l’avió, i la resta fins el 100% es soroll.
 
 Demostrat aquesta falta de lligam entre retards i nº de salt, ens fixarem en el primer salt perquè es el que té menys elements exògens que afectin al retard. Veurem que el primer salt només el 62% dels vols surten a l’hora, sent sortir a l’hora, l`hora planificada. No acceptar 10 minuts de “cortesia” que per costum es fa, sinó sortir exactament en el moment establert. 
 
